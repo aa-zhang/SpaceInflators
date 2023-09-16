@@ -6,9 +6,12 @@ using UnityEngine;
 public class Planet : MonoBehaviour
 {
     
+    
+    
     // Start is called before the first frame update
     void Start()
     {
+        
     }
 
     // Update is called once per frame
@@ -19,12 +22,9 @@ public class Planet : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        print(other.tag);
-        Debug.Log(other.tag);
         if (other.tag == "Player")
         {
             GameManager.manager.TriggerGameOver();
-            print("hi");
         }
     }
 }
