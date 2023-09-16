@@ -8,32 +8,38 @@ public class Spawner2 : MonoBehaviour
     [SerializeField] private GameObject ToSpawn1, ToSpawn2, ToSpawn3, ToSpawn4;
     private int pickObject;
 
+    private float _leftBoundary = -6;
+    private float _rightBoundary = 6;
+    private float _topBoundary = 18;
+    private float _bottomBoundary = 12;
+
     // Start is called before the first frame update
     void Start()
     {
-        SpawningTime = Random.Range(3f, 5f);
+        SpawningTime = Random.Range(10f, 15f);
     }
 
     void SpawnNow()
     {
         if (pickObject == 1)
         {
-            Instantiate(ToSpawn1, new Vector3(Random.Range(-15, 15), Random.Range(0, 30), 33), Quaternion.identity);
+            Instantiate(ToSpawn1, new Vector3(Random.Range(_leftBoundary, _rightBoundary), Random.Range(_bottomBoundary, _topBoundary), 33), Quaternion.identity);
+;
 
         }
         if (pickObject == 2)
         {
-            Instantiate(ToSpawn2, new Vector3(Random.Range(-15, 15), Random.Range(0, 30), 33), Quaternion.identity);
+            Instantiate(ToSpawn2, new Vector3(Random.Range(_leftBoundary, _rightBoundary), Random.Range(_bottomBoundary, _topBoundary), 33), Quaternion.identity);
 
         }
         if (pickObject == 3)
         {
-            Instantiate(ToSpawn3, new Vector3(Random.Range(-15, 15), Random.Range(0, 30), 33), Quaternion.identity);
+            Instantiate(ToSpawn3, new Vector3(Random.Range(_leftBoundary, _rightBoundary), Random.Range(_bottomBoundary, _topBoundary), 33), Quaternion.identity);
 
         }
         if (pickObject == 4)
         {
-            Instantiate(ToSpawn4, new Vector3(Random.Range(-15, 15), Random.Range(0, 30), 33), Quaternion.identity);
+            Instantiate(ToSpawn4, new Vector3(Random.Range(_leftBoundary, _rightBoundary), Random.Range(_bottomBoundary, _topBoundary), 33), Quaternion.identity);
 
         }
     }
@@ -44,12 +50,12 @@ public class Spawner2 : MonoBehaviour
         SpawningTime -= Time.deltaTime;
         if (SpawningTime <= 0)
         {
-            int numberObjects = Random.Range(0, 5);
+            int numberObjects = Random.Range(0, 2);
             for (int i = 0; i < numberObjects; i++)
             {
-                pickObject = Random.Range(1, 5);
+                pickObject = Random.Range(0, 5);
                 SpawnNow();
-                SpawningTime = Random.Range(0.5f, 2.5f);
+                SpawningTime = Random.Range(2f, 4f);
             }
 
         }

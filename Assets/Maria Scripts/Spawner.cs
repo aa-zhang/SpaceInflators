@@ -50,12 +50,12 @@ public class Spawner : MonoBehaviour
         SpawningTime -= Time.deltaTime;
         if (SpawningTime <= 0)
         {
-            int numberObjects = Random.Range(0, 5);
+            int numberObjects = Random.Range(0, 3);
             for (int i = 0; i < numberObjects; i++)
             {
                 pickObject = Random.Range(1, 5);
                 SpawnNow();
-                SpawningTime = Random.Range(0.5f, 2.5f);
+                SpawningTime = Random.Range(2f, 3f);
             }
 
         }

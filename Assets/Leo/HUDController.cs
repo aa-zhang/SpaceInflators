@@ -15,9 +15,9 @@ public class HUDController : MonoBehaviour
         gameOverPanel.SetActive(enable);
     }
 
-    public void UpdateScore(int newScore)
+    public void UpdateScore()
     {
-        score = newScore;
+        score ++;
     }
 
     private void Update()

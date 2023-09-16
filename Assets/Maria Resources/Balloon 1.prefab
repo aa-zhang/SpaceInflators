@@ -121,6 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shipInflation: {fileID: 0}
+  hud: {fileID: 0}
 --- !u!114 &-5824617461183302487
 MonoBehaviour:
   m_ObjectHideFlags: 0
