@@ -18,22 +18,22 @@ public class Spawner : MonoBehaviour
     {
         if (pickObject == 1)
         {
-            Instantiate(ToSpawn1, new Vector3(Random.Range(0, 100), Random.Range(0, 100), 0), Quaternion.identity);
+            Instantiate(ToSpawn1, new Vector3(Random.Range(-15, 15), Random.Range(0, 30), 33), Quaternion.identity);
 
         }
         if (pickObject == 2)
         {
-            Instantiate(ToSpawn2, new Vector3(Random.Range(0, 100), Random.Range(0, 100), 0), Quaternion.identity);
+            Instantiate(ToSpawn2, new Vector3(Random.Range(-15, 15), Random.Range(0, 30), 33), Quaternion.identity);
 
         }
         if (pickObject == 3)
         {
-            Instantiate(ToSpawn3, new Vector3(Random.Range(0, 100), Random.Range(0, 100), 0), Quaternion.identity);
+            Instantiate(ToSpawn3, new Vector3(Random.Range(-15, 15), Random.Range(0, 30), 33), Quaternion.identity);
 
         }
         if (pickObject == 4)
         {
-            Instantiate(ToSpawn4, new Vector3(Random.Range(0, 100), Random.Range(0, 100), 0), Quaternion.identity);
+            Instantiate(ToSpawn4, new Vector3(Random.Range(-15, 15), Random.Range(0, 30), 33), Quaternion.identity);
 
         }
     }

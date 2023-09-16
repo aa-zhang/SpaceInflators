@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6650272414740693312}
   - component: {fileID: 5898925601635269319}
   m_Layer: 0
-  m_Name: RandomSpawner
+  m_Name: RandomBalloonSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,7 +44,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1ba88376aa1e5d41b01cbab33ae845d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ToSpawn1: {fileID: 0}
-  ToSpawn2: {fileID: 0}
-  ToSpawn3: {fileID: 0}
-  ToSpawn4: {fileID: 0}
+  ToSpawn1: {fileID: 4552715171347176393, guid: f80eeba8e40181e45a85b28aaa7e9135,
+    type: 3}
+  ToSpawn2: {fileID: 4552715171347176393, guid: f80eeba8e40181e45a85b28aaa7e9135,
+    type: 3}
+  ToSpawn3: {fileID: 4552715171347176393, guid: f80eeba8e40181e45a85b28aaa7e9135,
+    type: 3}
+  ToSpawn4: {fileID: 4552715171347176393, guid: f80eeba8e40181e45a85b28aaa7e9135,
+    type: 3}
