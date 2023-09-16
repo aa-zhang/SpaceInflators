@@ -7,7 +7,6 @@ public class AudioManager : MonoBehaviour
 {
     [SerializeField] AudioClip mainMenuBGM;
     [SerializeField] AudioClip inGameBGM;
-    [SerializeField] AudioClip gameOverBGM;
 
     public bool toggle = true;
 
@@ -30,7 +29,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    void SetAndStartBGM(AudioClip clip)
+    public void SetAndStartBGM(AudioClip clip)
     {
         source.Stop();
         source.clip = clip;
