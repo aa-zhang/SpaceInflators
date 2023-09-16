@@ -26,7 +26,7 @@ public class ShipMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Debug.Log(_userHorizontalInput);
+        // Debug.Log(_userHorizontalInput);
         _rigidbody.velocity += _transform.up * _userVerticalInput * _speedMultipler;
         _rigidbody.velocity += _transform.right * _userHorizontalInput * _speedMultipler;
     }
