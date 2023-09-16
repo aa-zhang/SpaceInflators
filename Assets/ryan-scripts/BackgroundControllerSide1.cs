@@ -5,7 +5,7 @@ using UnityEngine;
 public class BackgroundControllerSide1 : MonoBehaviour
 {
     private MeshRenderer mesh;
-    private Material mat;
+    [SerializeField] private Material mat;
     private Vector2 matOffset;
     
     // Start is called before the first frame update

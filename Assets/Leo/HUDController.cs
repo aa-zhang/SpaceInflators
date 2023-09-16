@@ -12,7 +12,7 @@ public class HUDController : MonoBehaviour
 
     public void EnableGameOverPanel(bool enable)
     {
-        gameObject.SetActive(enable);
+        gameOverPanel.SetActive(enable);
     }
 
     public void UpdateScore(int newScore)

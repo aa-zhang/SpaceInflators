@@ -33,7 +33,6 @@ public class ShipMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Debug.Log(_transform.position);
         if (_transform.position.x <= _leftBoundary)
         {
             _rigidbody.velocity = new Vector3(0, _rigidbody.velocity.y, _rigidbody.velocity.z);
@@ -57,7 +56,6 @@ public class ShipMovement : MonoBehaviour
             _rigidbody.velocity = new Vector3(_rigidbody.velocity.x, 0, _rigidbody.velocity.z);
             _userHorizontalInput = Mathf.Min(0, _userVerticalInput);
         }
-
         _rigidbody.velocity += _transform.up * _userVerticalInput * _speedMultipler;
         _rigidbody.velocity += _transform.right * _userHorizontalInput * _speedMultipler;
     }
