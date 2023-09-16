@@ -5,14 +5,12 @@ using UnityEngine;
 public class ShipInflation : MonoBehaviour
 {
     private Transform _transform;
-    private bool _inflateInput;
 
     private float _inflationFactor = 0.5f;
     // Start is called before the first frame update
     void Start()
     {
         _transform = GetComponent<Transform>();
-        _inflateInput = false;
     }
 
     // Update is called once per frame

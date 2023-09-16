@@ -11,7 +11,7 @@ public class Spawner2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SpawningTime = Random.Range(0.5f, 2.5f);
+        SpawningTime = Random.Range(3f, 5f);
     }
 
     void SpawnNow()

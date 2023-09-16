@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveBalloon : MonoBehaviour
 {
-    public static int movespeed = 1;
+    public static int movespeed = 3;
     //private bounds = new Vector3(0,0,0);
 
     // Start is called before the first frame update
