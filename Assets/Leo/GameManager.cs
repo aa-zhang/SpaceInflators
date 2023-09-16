@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     public void TriggerGameOver()
     {
         OnGameOver.Invoke();
+        Time.timeScale = 0;
     }
 
     public void ReloadGame()
