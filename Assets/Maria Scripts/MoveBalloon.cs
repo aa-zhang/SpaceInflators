@@ -18,7 +18,7 @@ public class MoveBalloon : MonoBehaviour
     {
         gameObject.GetComponent<Transform>().position -= transform.forward * movespeed * Time.deltaTime;
 
-        if (gameObject.GetComponent<Transform>().position.z <=  0)
+        if (gameObject.GetComponent<Transform>().position.z <=  -4)
         {
             Destroy(this.gameObject);
         }
